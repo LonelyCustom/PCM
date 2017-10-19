@@ -1,0 +1,275 @@
+*{
+    boxsizing: border model;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Verdana", 'Open Sans', sans-serif;
+    background-image: url(../imgs/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /*background-repeat: repeat;*/
+    background-position: center center;
+}
+a {
+    text-decoration: none;
+}
+
+nav{
+    background-color: #242424;
+}
+
+nav ul {
+    display: inline-flex;
+    font-size: 2em;
+}
+
+nav ul ul{
+    display: none;
+    background-color: #242424;
+}
+
+nav ul li {
+    display: block;
+    padding:0.5em 1.2em;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-size:1em;
+    position: absolute;
+    top: 2em;
+    z-index: 1;
+}
+
+nav ul li:hover > ul li {
+    float: none;
+    display: block;
+    letter-spacing: 1px;
+    font-size:1em;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    margin: 1.5em 0em;
+    padding: 1.5em;
+
+}
+
+h3, h5, h2{
+    font-size: 2.3em;
+    text-align: center;
+}
+
+section > p {
+    position: relative;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: justify;
+    text-indent: 3em;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+}
+
+footer {
+    background-color: #242424;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+footer > p {
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+#slideshow {
+    background-size: 100%;
+    height: 26.5em;
+}
+
+.imagens {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+figcaption > p {
+    font-size: 1.8em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.imagem {
+    display: block;
+    margin: 0 auto;
+}
+
+div > p {
+
+    z-index: 100;
+    position: absolute;
+    color: black;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.middlefig{
+    text-align: center;
+    font-size: 2em;
+
+}
+
+@media only screen
+and (max-device-width : 600px) {
+    .imagem {
+        width: 60%;
+    }
+
+    .middlefig {
+        font-size: 3em;
+    }
+}
+
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+.Slide {
+    display:none;
+}
+
+
+
+
+@media only screen
+and (min-device-width : 700px)
+and (max-device-width : 1100px) {
+    article > section {
+        display: inline-flex;
+        width: 100%;
+    }
+    .imagens{
+        width: 100%;
+        display: inline-block;
+
+    }
+    .fotosAlbum{
+        margin:3em;
+        width:18em;
+        height:60em;
+        float:left;
+
+    }
+    h4{
+        font-size: 1.8em;
+    }
+
+
+    .contactosFig{
+
+        align-items: right;
+        display: inline-flex;
+        margin: auto;
+
+
+    }
+
+    .middlefig {
+        font-size: 2em;
+    }
+}
+
+@media only screen
+and (min-device-width : 1100px) {
+
+    nav ul li {
+        display: block;
+        padding: 0.5em 4em;
+        font-size: 0.7em;
+    }
+
+    .imagens {
+        width: 100%;
+        display: inline-block;
+
+    }
+
+    .fotosAlbum {
+        padding: 1.5em;
+        margin: 3em;
+        width: 11em;
+        height: 50em;
+        float: left;
+
+    }
+
+    figcaption > p {
+        font-size: 1.3em;
+    }
+
+
+    h4{
+        font-size: 1.8em;
+    }
+    .contactosFig{
+
+        display: inline-flex;
+        margin: auto;
+        align-items: right;
+
+    }
+    .containerAlbum{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .icon{
+        display: inline-block;
+        width: 25%;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+

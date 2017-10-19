@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Portfólio Web Responsivo</title>
+    <link rel="stylesheet" href="css/styling.css" type="text/css"/>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a>Álbuns</a>
+            <ul>
+                <li><a href="HybridTheory.html">Hybrid Theory</a></li>
+                <li><a href="Meteora.html">Meteora</a></li>
+                <li><a href="MinutesToMidnight.html">Minutes to Midnight</a></li>
+                <li><a href="AThousandSuns.html">A Thousand Suns</a></li>
+                <li><a href="LivingThings.html">Living Things</a></li>
+                <li><a href="TheHuntingParty.html">The Hunting Party</a></li>
+                <li><a href="OneMoreLight.html">One More Light</a></li>
+            </ul>
+        </li>
+        <li><a href="About.html">Chester</a>
+        </li>
+        <li><a href="contact.html">Contactos</a></li>
+    </ul>
+</nav>
+<section class="slideshow-container">
+    <article class="Slide">
+        <figure>
+            <a href="Meteora.html"><img src="imgs/meteoraalbum.jpg" width="500" height="300"></a>
+            <figcaption><a href="Meteora.html">Albúm Meteora</a></figcaption>
+        </figure>
+    </article>
+    <article class="Slide">
+        <figure>
+            <a href="LivingThings.html"><img src="imgs/livingthingsalbum.jpg" width="500" height="300"></a>
+            <figcaption><a href="LivingThings.html">Albúm Living Things</a></figcaption>
+        </figure>
+    </article>
+    <article class="Slide">
+        <figure><a href="AThousandSuns.html">
+            <img src="imgs/athousandsunsalbum.jpg" width="500" height="300"></a>
+            <figcaption><a href="AThousandSuns.html">Albúm A Thousand Suns</a></figcaption>
+        </figure>
+    </article>
+    <article class="Slide">
+        <figure><a href="HybridTheory.html">
+            <img src="imgs/hybridtheoryalbum.png" width="500" height="300">
+        </a>
+            <figcaption><a href="HybridTheory.html">Albúm Hybrid Theory</a></figcaption>
+        </figure>
+    </article>
+    <article class="Slide">
+        <figure>
+            <a href="MinutesToMidnight.html">
+                <img src="imgs/minutestomidnightalbum.png" width="500" height="300">
+            </a>
+            <figcaption><a href="MinutesToMidnight.html">Albúm Minutes to Midnight</a></figcaption>
+        </figure>
+    </article>
+    <article class="Slide">
+        <figure>
+            <a href="OneMoreLight.html">
+                <img src="imgs/onemorelightalbum.jpg" width="500" height="300"></a>
+            <figcaption><a href="OneMoreLight.html">Albúm One More Light</a></figcaption>
+        </figure>
+    </article>
+    <article class="Slide">
+        <figure>
+            <a href="TheHuntingParty.html">
+                <img src="imgs/thehuntingpartyalbum.jpg" width="500" height="300"></a>
+            <figcaption><a href="TheHuntingParty.html">Albúm The Hunting Party</a></figcaption>
+        </figure>
+    </article>
+
+
+</section>
+<article>
+    <section id="containerAlbum">
+        <figure class="icon">
+            <a href="Meteora.html"><img class="imagem" src="imgs/meteoraalbum.jpg"></a>
+            <figcaption class="middlefig">Meteora</figcaption>
+        </figure>
+        <figure class="icon">
+            <a href="LivingThings.html"><img class="imagem" src="imgs/livingthingsalbum.jpg"></a>
+            <figcaption class="middlefig">Living Things</figcaption>
+        </figure>
+        <figure class="icon">
+            <a href="OneMoreLight.html"><img class="imagem" src="imgs/onemorelightalbum.jpg"></a>
+            <figcaption class="middlefig">One More Light</figcaption>
+        </figure>
+    </section>
+</article>
+
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("Slide");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 4 seconds
+    }
+</script>
+
+
+</body>
+<footer>
+    <p>Trabalho realizado por</p>
+    <p>Fábio e Claudio</p>
+</footer>
+
+</html>
